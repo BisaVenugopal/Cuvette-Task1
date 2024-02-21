@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Column Items Aligned at the Same Place</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.item {
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+    /* Make each item take the same space */
+    flex: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Item 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+        <div class="item">Item 2: Lorem ipsum dolor sit amet.</div>
+        <div class="item">Item 3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat mi eu metus elementum commodo.</div>
+    </div>
+</body>
+</html>
+
+
